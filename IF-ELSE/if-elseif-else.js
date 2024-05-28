@@ -70,36 +70,53 @@
 
 
 // 5
-let nombreMes = prompt("Ingrese un mes en minúsculas");
-let dias;
+// let nombreMes = prompt("Ingrese un mes en minúsculas");
+// let dias;
 
-if (nombreMes === "enero" || nombreMes === "marzo" || nombreMes === "mayo" || nombreMes === "julio" || nombreMes === "agosto" || nombreMes === "octubre" || nombreMes === "diciembre") {
-    dias = 31;
-    console.log("El mes de" , nombreMes, "tiene", dias, "días.");
-} else if (nombreMes === "febrero") {
-    dias = 28;
-    console.log("El mes de" , nombreMes, "tiene", dias, "días.")
-} else if (nombreMes === "abril" || nombreMes === "junnio" ||nombreMes === "septiembre" || nombreMes === "noviembre") {
-    dias = 30;
-    console.log("El mes de" , nombreMes, "tiene", dias, "días.")
+// if (nombreMes === "enero" || nombreMes === "marzo" || nombreMes === "mayo" || nombreMes === "julio" || nombreMes === "agosto" || nombreMes === "octubre" || nombreMes === "diciembre") {
+//     dias = 31;
+//     console.log("El mes de", nombreMes, "tiene", dias, "días.");
+// } else if (nombreMes === "febrero") {
+//     dias = 28;
+//     console.log("El mes de", nombreMes, "tiene", dias, "días.")
+// } else if (nombreMes === "abril" || nombreMes === "junnio" || nombreMes === "septiembre" || nombreMes === "noviembre") {
+//     dias = 30;
+//     console.log("El mes de", nombreMes, "tiene", dias, "días.")
+// } else {
+//     console.log("El nombre del mes no es válido");
+// }
+
+
+// // 6
+
+// let edad = parseInt(prompt("Ingrese su edad:"));
+// if (edad >= 0) {
+//     if (edad <= 12) {
+//         console.log("Eres un niño.");
+//     } else if (edad <= 17) {
+//         console.log("Eres un adolescente.");
+//     } else if (edad <= 64) {
+//         console.log("Eres un adulto.");
+//     } else {
+//         console.log("Eres un anciano.");
+//     }
+// } else {
+//     console.log("Edad no valida.");
+// }
+
+// 7
+let número = parseInt(prompt("Ingrese un número, para determinar si es par o impar"));
+
+if (número === 0) {
+    console.log("El numero es cero");
 } else {
-    console.log("El nombre del mes no es válido");
+} if (número > 0) {
+    console.log("El numero es positivo");
+}else {
+    console.log("El numero es negativo");
 }
-
-
-// 6
-
-let edad = parseInt(prompt("Ingrese su edad:"));
-if (edad >= 0) {
-if (edad <= 12) {
-console.log("Eres un niño.");
-} else if (edad <= 17) {
-console.log("Eres un adolescente.");
-} else if (edad <= 64) {
-console.log("Eres un adulto.");
+if (número % 2 === 0) {
+    console.log("El numero es par");
 } else {
-console.log("Eres un anciano.");
-}
-} else {
-console.log("Edad no valida.");
+    console.log("El numero es impar");
 }
