@@ -40,3 +40,20 @@ console.log("EJERCICIO 3");
 for (let i = 1; i <= 10; i++) {
     console.log("5 x " + i + " = " + (5 * i));
 }
+
+console.log("EJERCICIO 4");
+// 4
+for (let i = 10; i > 0; i--) {
+    console.log(i);
+}
+console.log("EJERCICIO 5");
+// 5
+for (let i = 20; i >= 0; i -= 2) {
+    console.log(i);
+}
+console.log("EJERCICIO 6");
+// 6
+for (let i = 1; i < 1000; i *= 2) {
+    console.log("El valor de i es " + i);
+}
+
