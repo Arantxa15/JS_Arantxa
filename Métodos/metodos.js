@@ -1,25 +1,25 @@
-let mensaje = "Hola Mundo";
-let mensajeMayusculas = mensaje.toUpperCase(); // toLowerCase() minusculas 
-console.log(mensajeMayusculas); // Resultado: "HOLA MUNDO"
+// let mensaje = "Hola Mundo";
+// let mensajeMayusculas = mensaje.toUpperCase(); // toLowerCase() minusculas 
+// console.log(mensajeMayusculas); // Resultado: "HOLA MUNDO"
 
 
-// ----------------------------index of()--------------------
+// // ----------------------------index of()--------------------
 
-//me devuelve el  primer valor que encuentra , de acuerdo el caracter que yo puse para la busqueda.
+// //me devuelve el  primer valor que encuentra , de acuerdo el caracter que yo puse para la busqueda.
 
-// cuando me devuelve -1 es por que no encuentra ese valor 
+// // cuando me devuelve -1 es por que no encuentra ese valor 
 
-let mensaje1 = "Hola Mundo";
-let posicionO = mensaje1.indexOf("o");
-console.log(posicionO); // Resultado: 1
+// let mensaje1 = "Hola Mundo";
+// let posicionO = mensaje1.indexOf("o");
+// console.log(posicionO); // Resultado: 1
 
-//---------------------split----------------------------
+// //---------------------split----------------------------
 
-// Me corta la cadena de texto -por donde yo le diga y me devuelve cortes de la frase y lo que no esta declarado en el corte me lo borra
+// // Me corta la cadena de texto -por donde yo le diga y me devuelve cortes de la frase y lo que no esta declarado en el corte me lo borra
 
-let mensaje3 = "Hola, Mundo";
-let palabras = mensaje3.split(", ");
-console.log(palabras); // Resultado: ["Hola", "Mundo"]
+// let mensaje3 = "Hola, Mundo";
+// let palabras = mensaje3.split(", ");
+// console.log(palabras); // Resultado: ["Hola", "Mundo"]
 
 
 //------------inciso------------------------------
@@ -74,37 +74,84 @@ console.log(palabras); // Resultado: ["Hola", "Mundo"]
 // 16
 // Contador de consonantes: Solicita al usuario una frase y cuenta cuántas consonantes contiene.
 
-let frase = prompt("Ingresa una frase").toLowerCase();
-let contador = 0;
-let consonantes = "bcdfghjklmnpqrstvwxyz";
+// let frase = prompt("Ingresa una frase").toLowerCase();
+// let contador = 0;
+// let consonantes = "bcdfghjklmnpqrstvwxyz";
 
-for (let i = 0; i < frase.length; i++) {
-    if (consonantes.indexOf(frase[i])>= 0) {
-        contador++;
+// for (let i = 0; i < frase.length; i++) {
+//     if (consonantes.indexOf(frase[i])>= 0) {
+//         contador++;
+//     }
+// }
+// console.log("La frase tiene " + contador + " consonante(s).");
+
+
+// frase = prompt("Ingresa una frase").toLowerCase();
+// contador = 0;
+// consonantes = "r"
+
+// for (let i = 0; i < frase.length; i++) {
+//     if (frase[i] === consonantes) {
+//         contador++;
+//     }
+// }
+// console.log("La frase tiene  " + contador + " R");
+
+// frase = prompt("Ingresa una frase").toLowerCase();
+// contador = 0;
+// let vocales = "aeiouAEIOU";
+
+// for (let i = 0; i < frase.length; i++) {
+//     if (vocales.indexOf(frase[i])>= 0) {
+//         contador++
+//     }
+// }
+// console.log("La frase tiene  "+ contador + " vocales");
+
+
+
+// 17
+
+// 1
+// let numerosPares = 0;
+// let continuar = true;
+
+// // Bucle for con una condición siempre verdadera
+// for (let i = 0; continuar == true; i++) {
+//     let numero = prompt("Ingresa un numero (o escribe parar para detener");
+
+//     if (numero.toLowerCase() === "parar") {
+//     continuar = false;
+//     } else {
+//         if(numero % 2 === 0) {
+//             numerosPares ++;
+//         }
+
+//     }
+// }
+// console.log("Numeros pares: " + numerosPares);
+
+// 2
+
+let numeroPP = 0;
+let numeroPN = 0;
+continuar = true;
+
+
+for (let i = 0; continuar == true; i++) {
+    let numero = prompt("Ingresa un numero (o escribe parar para detener");
+
+    if (numero.toLowerCase() === "parar") {
+    continuar = false;
+    } else {
+        if((numero % 2 == 0) && (numero >= 0)){
+            numeroPP ++;
+        }else if ((numero % 2 == 0) && (numero < 0)) {
+            numeroPN ++;
+        }
+
     }
-}
-console.log("La frase tiene " + contador + " consonante(s).");
 
-
-frase = prompt("Ingresa una frase").toLowerCase();
-contador = 0;
-consonantes = "r"
-
-for (let i = 0; i < frase.length; i++) {
-    if (frase[i] === consonantes) {
-        contador++;
-    }
-}
-console.log("La frase tiene  " + contador + " R");
-
-frase = prompt("Ingresa una frase").toLowerCase();
-contador = 0;
-let vocales = "aeiouAEIOU";
-
-for (let i = 0; i < frase.length; i++) {
-    if (vocales.indexOf(frase[i])>= 0) {
-        contador++
-    }
-}
-console.log("La frase tiene  "+ contador + " vocales");
-
+};
+console.log("Números pares y positivos " + numeroPP);
+console.log("Números impares y negativos" + numeroPN);
