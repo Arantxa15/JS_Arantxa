@@ -133,25 +133,46 @@
 
 // 2
 
-let numeroPP = 0;
-let numeroPN = 0;
-continuar = true;
+// let numeroPP = 0;
+// let numeroPN = 0;
+// continuar = true;
 
 
-for (let i = 0; continuar == true; i++) {
-    let numero = prompt("Ingresa un numero (o escribe parar para detener");
+// for (let i = 0; continuar == true; i++) {
+//     let numero = prompt("Ingresa un numero (o escribe parar para detener");
 
-    if (numero.toLowerCase() === "parar") {
-    continuar = false;
-    } else {
-        if((numero % 2 == 0) && (numero >= 0)){
-            numeroPP ++;
-        }else if ((numero % 2 == 0) && (numero < 0)) {
-            numeroPN ++;
-        }
+//     if (numero.toLowerCase() === "parar") {
+//     continuar = false;
+//     } else {
+//         if((numero % 2 == 0) && (numero >= 0)){
+//             numeroPP ++;
+//         }else if ((numero % 2 == 0) && (numero < 0)) {
+//             numeroPN ++;
+//         }
 
+//     }
+
+// };
+// console.log("Números pares y positivos " + numeroPP);
+// console.log("Números impares y negativos " + numeroPN);
+
+// 17.1
+
+// 1
+
+let numero = parseInt(prompt("Ingresa un número"));
+let numeroPrimo = true;
+
+for (let i = 2; i <= ( numero / 2); i++) {
+    // si el número dividido entre algún otro número que no sea ni el 1 ni el mismo da 0
+    // El resto, entonces pasamos numeroPrimo a false
+    if (numero % i === 0) {
+        numeroPrimo = false;
+    } 
     }
+    if (numeroPrimo === true) {
+        console.log("El numero es primo");
 
-};
-console.log("Números pares y positivos " + numeroPP);
-console.log("Números impares y negativos" + numeroPN);
+    } else{
+        console.log("El numero no es primo");
+    }
