@@ -40,3 +40,20 @@ function saludar(nombre) {
 
 }
 console.log(saludar(nombre));
+
+// 3 Escribe una función que imprima en la consola los números pares del 1 al 10
+//No estoy usando parametros por que no quiero sustituir por nada 
+
+function imprirmirPares() {
+    for (let i = 2; i <= 10; i+=2) {
+                  
+            console.log(i);
+        
+    }
+}
+ 
+
+imprirmirPares();
+
+
+// 4
