@@ -69,7 +69,7 @@
 
 // }
 
-// console.log(' la letra '+ letra+ ' aparece '+ contador+' vez/veces en la frase ');
+console.log(' la letra '+ letra+ ' aparece '+ contador+' vez/veces en la frase ');
 
 // 16
 // Contador de consonantes: Solicita al usuario una frase y cuenta cuántas consonantes contiene.
