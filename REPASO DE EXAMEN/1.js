@@ -103,5 +103,6 @@ console.log(Pares(n));
 
 
 // ¿Diferencia entre Java y JS?
+// No son correctas las preguntas que hay en el examen
 
 
