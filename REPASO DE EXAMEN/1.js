@@ -35,8 +35,9 @@ console.log("Números pares: " + contadorPares);
 console.log("EJERCICIO 3");
 // Programa que nos diga si un número es primo (no es divisible por ninguno otro número que no sea él mismo o 1)
 
-// let numeroY = parseInt(prompt("Ingrese Número"));
-// let numerosPrimo = true;
+let numeroY = parseInt(prompt("Ingrese Número"));
+let numerosPrimo = true;
+for (let i = 2; i <= (numeroY / 2); i++) 
 
 
 console.log("EJERCICIO 4");
