@@ -17,3 +17,10 @@ document.getElementById('miP2').textContent = 'Este es el nuevo contenido utiliz
 
 
 // 3- Crea una página web con un botón y un div vacío. Utiliza JavaScript para que, al hacer clic en el botón, el contenido del div cambie a “Has hecho click en el botón”
+
+let vacio = document.getElementById('div1');
+let boton = document.getElementById('boton1');
+function aparecer (){
+    vacio.innerHTML = '<p>¡Has hecho click en el <a href="#">botón</a>!</p>'
+}
+boton.addEventListener('click', aparecer);
