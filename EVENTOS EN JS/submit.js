@@ -38,21 +38,21 @@ function validarEnvío(event) {
     formulario.submit();
   }
 
-  mostrarError(document.getElementById('nombre'), !validarNombre);
-  mostrarError(document.getElementById('edad'), !validarEdad);
-  mostrarError(document.getElementById('interes'), !validarInteres);
+  mostrarError('errorr-nombre', validarNombre);
+  mostrarError('errorr-edad', validarEdad);
+  mostrarError('errorr-interes', validarInteres);
 
 
 }
 
 function mostrarError(id, mostrar) {
-  let mensajeError = id.nextElementSibling;
+  let parrafo = document.getElementById(id);
 
   if (mostrar) {
-    mensajeError.style.display = 'block'; //Mostrar el mensaje de error
+    parrafo.style.display = 'none'; //Ocultar el mensaje de error
 
   } else {
-    mensajeError.style.display = 'none'; //Ocultar el mensaje de error
+    parrafo.style.display = 'block'; //Mostrar el mensaje de error
   }
 }
 
