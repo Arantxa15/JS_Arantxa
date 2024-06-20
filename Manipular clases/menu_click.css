@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: #333;
+    padding-top: 60px;
+    width: 200px;
+    height: 100%;
+    transition: left 0.5s;
+}
+
+.menu ul {
+    text-align: center;
+}
+
+.menu ul li {
+    padding: 15px;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-size: 18px;
+}
+
+.hamburguesa {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 9;
+}
+
+.fa-bars {
+    color: #5f5f5f;
+}
+
+.desplegar {
+    left: 0;
+}

@@ -1,5 +1,5 @@
 let parrafo = document.getElementById('parrafo');
-let addClassButton= document.getElementById('mas');
+let addClassButton= document.getElementById('mas'); 
 let removeClassButton= document.getElementById('menos');
 let toggleClassButton= document.getElementById('alternar');
 
