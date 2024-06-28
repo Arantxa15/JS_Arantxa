@@ -7,12 +7,12 @@
 
 // 2 Al hacer clic en un botón, incrementar un contador y mostrar el valor actual en la página.
 
-// let contador = 0;
-// function incrementarContador() {
-//     contador++;
-//     document.getElementById('contador').textContent = contador;
-// }
+ let contador = 0;
+ function incrementarContador() {
+     contador++;
+    document.getElementById('contador').textContent = contador;
+ }
 
 
 // 3 Al hacer clic en un botón, mostrar la fecha y hora actual en un párrafo.
-let ahora = new Date;
+// let ahora = new Date;
