@@ -3,7 +3,7 @@
 let ejercicio1 = document.getElementById('Ejercicio-1');
 ejercicio1.style.backgroundColor = "lightblue";
 
-
+ 
 // 2 Haz una página web con un párrafo y utiliza JavaScript para cambiar su tamaño de fuente
 
 let ejercicio2 = document.getElementById('Ejercicio-2');
